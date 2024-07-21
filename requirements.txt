@@ -2,7 +2,7 @@ numpy
 pandas
 opencv-python
 matplotlib
-skimage
+scikit-image
 scipy
 operator
 tensorflow
