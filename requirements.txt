@@ -4,5 +4,4 @@ opencv-python
 matplotlib
 scikit-image
 scipy
-operator
 tensorflow
