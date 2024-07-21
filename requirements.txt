@@ -3,3 +3,8 @@ numpy
 pandas
 random
 opencv-python
+matplotlib
+skimage
+scipy
+operator
+tensorflow
