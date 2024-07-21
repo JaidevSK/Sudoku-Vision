@@ -1,6 +1,6 @@
 # Sudoku-Vision
 
-The live application can be accessed using the link: https://sudoku-vision-app.streamlit.app/
+[//]: <> (The live application can be accessed using the link: https://sudoku-vision-app.streamlit.app/)
 
 ## Application User Interface
 
