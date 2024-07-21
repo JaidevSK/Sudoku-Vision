@@ -3,4 +3,3 @@ numpy
 pandas
 random
 opencv-python
-cv2
