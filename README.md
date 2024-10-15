@@ -100,6 +100,23 @@ Original Sudoku Array:</br>
 Results after running Forward Checking for 25 Iterations:</br>
 </br>![image](https://github.com/user-attachments/assets/af661014-1180-4a7d-b862-efcad26bb3e9)</br>
 
+### 2.1.7 Backtracking
+</br>![image](https://github.com/user-attachments/assets/c5ccc5f4-bce3-46b1-8ffe-58c3a892269b)</br>
+The traditional backtracking algorithm for solving the remaining sudoku grid after "n" iterations of the forward checking is as given above. In our algorithm analysis, we will analyse the tradeoffs between varying the n value for different difficulty levels with respect to execution time and dynamic memory consumption.
+</br>![image](https://github.com/user-attachments/assets/545fd45d-3742-467b-b773-96675bb8f82c)</br>
+Given above is the result after solving the remaining Sudoku using Backtracking.
+
+### 2.1.8 Algorithm Runtime Analysis
+#### 2.1.8.1 For Easy Difficulty
+#### 2.1.8.2 For Medium Difficulty
+#### 2.1.8.3 For Hard Difficulty
+### 2.1.9 Algorithm Dynamic Memory Consumption Analysis
+#### 2.1.9.1 For Easy Difficulty
+#### 2.1.9.2 For Medium Difficulty
+#### 2.1.9.3 For Hard Difficulty
+### 2.1.10 Overall Result for Algorithm Analysis
+### 2.1.11 Sudoku Vision: Streamlit Application
+
 
 
 
