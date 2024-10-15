@@ -71,6 +71,14 @@ Initial Sudoku Image:
 Obtained Sudoku Array:
 </br>![image](https://github.com/user-attachments/assets/c35c458d-1da6-454f-a51e-0a4a3d463bfa)</br>
 
+### 2.1.3 Sudoku Difficulty Classification
+In the first part of the project, we have analysed the methodology for the extraction of sudoku from images, in this part of the project, we will explore the possibility of using an optimised mixture of CSP solving algorithm (Forward Checking) and Backtracking in obtaining the solution for varying difficulties of the Sudoku grid. In order to classify the difficulty of the sudoku grid, as we are dealing with constraints, a simple way of classiying the difficulty would be based on the number of zeros. If we have less number of zeros in the grid, there would be less flexibility in assigning the values and hence, we classified them as hard, while the ones with slightly more number of zeros were classified as medium and the ones with the most number of zeros were classified as easy. The dataset for the sudokus was taken from the website Sudoku Bank where the sudokus were available on https://github.com/grantm/sudoku-exchange-puzzle-bank in .json format. A total of 1500 sudokus were downloaded and used for the analysis.
+</br>![image](https://github.com/user-attachments/assets/88334f64-66e5-4db6-b799-ee1c938fe364)</br>
+This plot shows the distribution of the number of zeros across the different sudoku grids.
+Based on the above plot, the difficulty classifier was executed and the results along with the code are as given below:
+</br>![image](https://github.com/user-attachments/assets/b93dfcd4-9f18-436f-a75d-20fcccb08acc)</br>
+The sudokus were stored in the respective files named <difficulty_level>_sudoku.txt based on the difficulty level in the folder Sudoku Difficulty Classifier for further analysis.
+
 
 
 
