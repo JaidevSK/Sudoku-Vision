@@ -110,7 +110,7 @@ Given above is the result after solving the remaining Sudoku using Backtracking.
 Following the standard execution time / performance measurement process, the program was run for five different values of "n" (the number of iterations for which the forward checking was run) three times and the mean of this times was taken. All the time values are calculated in nanoseconds. The values are as given below:
 #### 2.1.8.1 For Easy Difficulty
 
-
+```
 Mean Runtime for Easy, 10 iter, trial 1: 38.57733638888889
 Mean Runtime for Easy, 10 iter, trial 2: 9.80619777777778
 Mean Runtime for Easy, 10 iter, trial 3: 8.02532
@@ -126,16 +126,17 @@ Mean Runtime for Easy, 40 iter, trial 3: 8.021085555555555
 Mean Runtime for Easy, 50 iter, trial 1: 9.114273888888889
 Mean Runtime for Easy, 50 iter, trial 2: 7.93228861111111
 Mean Runtime for Easy, 50 iter, trial 3: 8.578741111111109
+```
 
-Mean of All Trials
+##### Mean of All Trials
 
-
+```
 Mean Runtime for Easy, 10 iter: 18.80295138888889
 Mean Runtime for Easy, 20 iter: 8.240203703703704
 Mean Runtime for Easy, 30 iter: 7.928531944444444
 Mean Runtime for Easy, 40 iter: 7.790321111111111
 Mean Runtime for Easy, 50 iter: 8.54176787037037
-
+```
 
 
 
