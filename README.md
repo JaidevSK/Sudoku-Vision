@@ -311,7 +311,7 @@ The Web Application using Streamlit can be accessed using the link given above. 
 <INSERT IMAGES>
 
 
-# Referneces and Acknowledgements
+# References and Acknowledgements
 - Foundations of AI: Multiagent Systems (2024) - IIT Gandhinagar
 - Documentations of Utilised Libraries
 
