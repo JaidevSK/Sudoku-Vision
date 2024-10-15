@@ -300,7 +300,15 @@ From the above analysis, we can see that the value of n (the number of iteration
 | Hard        | ~45         |
 
 ### 2.1.11 Sudoku Vision: Streamlit Application
+In oreder to provide a suitable user interface for the user to utilise our methodology adopted for *Solving Sudokus from Images*, we have developed a web application using the streamlit framework. Streamlit is a flexible framework in python that allows us to develop applications in Python along with styling using HTML, CSS and JS. It also allows us to deploy the application on streamlit cloud. The link to the application is: <ADD LINK>
 
+#### CLI Application
+A basic Command Line Interface application is also developed which requires the user to clone this repository and run the CLI file using the command: ```python3 CLI.py```. The usage of the application is as shown below:
+<INSERT IMAGE>
+
+#### Web Appllication
+The Web Application using Streamlit can be accessed using the link given above. The application can also be used locally on a desktop system by cloning this repository. The advantage of a web application deployed is that it can be used from any device with internet connection including Mobile Phones. The usage of the Web APplication is as shown in the images below:
+<INSERT IMAGES>
 
 
 
