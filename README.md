@@ -7,7 +7,7 @@
 - To develop an application that solves Sudoku puzzles from images using the most optimal method for different difficulty levels (by adjusting the proportion of the problem that will be solved by Constraint satisfaction and Backtracking).
 - To explore the usage of Reinforcement Learning in solving Sudoku puzzles
 
-# 2. Methodology
+# 2. Methodology and Results
 ## 2.1 Sudoku Vision Application
 ### 2.1.1 Digit Optical Character Recognition
 Since we aim to solve sudokus directly from the images (without requiring the user to manually type the sudoku digits), one of the most important tasks is to have a computer vision model for the classification of the given images of individual digits into their respective classes of digits. This is the task of Optical Character Recognition or OCR. In order to perform the task of OCR, we can either use the python library of EasyOCR or develop a model from scratch. We have taken the second approach. The dataset for the model was taken from kaggle <https://www.kaggle.com/datasets/kshitijdhama/printed-digits-dataset> [1]. Some images from the dataset are as given below: </br>
@@ -78,6 +78,18 @@ This plot shows the distribution of the number of zeros across the different sud
 Based on the above plot, the difficulty classifier was executed and the results along with the code are as given below:
 </br>![image](https://github.com/user-attachments/assets/b93dfcd4-9f18-436f-a75d-20fcccb08acc)</br>
 The sudokus were stored in the respective files named <difficulty_level>_sudoku.txt based on the difficulty level in the folder Sudoku Difficulty Classifier for further analysis.
+
+### 2.1.4 Constraint Development
+The aim of this part is to develop a mixture of the Forward checking CSP solver algorithm that would be followed by the traditional backtracking algorithm. The first part of this would require us to use a forward checking algorithm which would require us to develop a "constraint creator" algorithm which would create constraints from the given sudoku grid. For an empty location (0) in a sudoku grid, the contraints would be that the particular location in the grid cannot take the values that are already present in the same row, same column and the same 3x3 grid to which that "small box" belongs to. So, based on this, a constraint developer algorithm was developed as given below:
+</br>![image](https://github.com/user-attachments/assets/679f05b7-1787-45ab-9f40-249f1412046b)</br>
+The grid given below was run through the above function:
+</br>![image](https://github.com/user-attachments/assets/e7235f2d-dc97-40fa-a2e9-a5e6ed63afe1)</br>
+The results from the constraint finder algorithm are as given below:
+</br>![image](https://github.com/user-attachments/assets/809b6a6b-fee9-4d92-aea7-c16ebb2f5255)</br>
+
+
+
+
 
 
 
