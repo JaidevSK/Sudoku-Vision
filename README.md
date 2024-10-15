@@ -107,7 +107,7 @@ The traditional backtracking algorithm for solving the remaining sudoku grid aft
 Given above is the result after solving the remaining Sudoku using Backtracking.
 
 ### 2.1.8 Algorithm Runtime Analysis
-Following the standard execution time / performance measurement process, the program was run for five different values of "n" (the number of iterations for which the forward checking was run) three times and the mean of this times was taken. All the time values are calculated in nanoseconds. The values are as given below:
+Following the standard execution time / performance measurement process, the program was run for five different values of "n" (the number of iterations for which the forward checking was run) three times and the mean of this times was taken. All the time values are calculated in nanoseconds. The time consumption was calculated using the time library (time_ns command) of python. The values are as given below:
 #### 2.1.8.1 For Easy Difficulty
 
 ```
@@ -183,7 +183,7 @@ Mean Runtime for Hard, 50 iter, trial 1: 0.9191022471910113
 Mean Runtime for Hard, 50 iter, trial 2: 0.2584801498127341
 Mean Runtime for Hard, 50 iter, trial 3: 0.28364044943820227
 ```
-##### Mean of ALl Trials
+##### Mean of All Trials
 ```
 Mean Runtime for Hard, 10 iter: 1.2863770287141076
 Mean Runtime for Hard, 20 iter: 0.6767094881398252
@@ -196,10 +196,109 @@ Mean Runtime for Hard, 50 iter: 0.4870742821473159
 
 
 ### 2.1.9 Algorithm Dynamic Memory Consumption Analysis
+The dynamic memory consumption analysis is necessary for effectively running the sudoku solver on devices with lower computing power such as mobile phones. In the same standard measurement process as that of execution time analysis, the program was run thrice and the amout of memory consumed was tracked by the command ```tracemalloc.get_traced_memory()``` from the tracemalloc library in python. The results are as shown below. The unit for the memory consumed is Bytes.
 #### 2.1.9.1 For Easy Difficulty
+```
+Mean Memory for Easy, 10 iter, trial 1: 100576.71111111112 Unit: Bytes
+Mean Memory for Easy, 10 iter, trial 2: 30832.069444444445 Unit: Bytes
+Mean Memory for Easy, 10 iter, trial 3: 27132.430555555555 Unit: Bytes
+Mean Memory for Easy, 20 iter, trial 1: 55456.96111111111 Unit: Bytes
+Mean Memory for Easy, 20 iter, trial 2: 34098.544444444444 Unit: Bytes
+Mean Memory for Easy, 20 iter, trial 3: 28171.80277777778 Unit: Bytes
+Mean Memory for Easy, 30 iter, trial 1: 51113.669444444444 Unit: Bytes
+Mean Memory for Easy, 30 iter, trial 2: 32070.82222222222 Unit: Bytes
+Mean Memory for Easy, 30 iter, trial 3: 29962.480555555554 Unit: Bytes
+Mean Memory for Easy, 40 iter, trial 1: 47173.48055555556 Unit: Bytes
+Mean Memory for Easy, 40 iter, trial 2: 32452.144444444446 Unit: Bytes
+Mean Memory for Easy, 40 iter, trial 3: 29995.86111111111 Unit: Bytes
+Mean Memory for Easy, 50 iter, trial 1: 43094.580555555556 Unit: Bytes
+Mean Memory for Easy, 50 iter, trial 2: 34092.15 Unit: Bytes
+Mean Memory for Easy, 50 iter, trial 3: 29990.03888888889 Unit: Bytes
+```
+##### Mean of All Trials
+```
+Mean Memory for Easy, 10 iter: 52847.07037037038
+Mean Memory for Easy, 20 iter: 39242.43611111111
+Mean Memory for Easy, 30 iter: 37715.65740740741
+Mean Memory for Easy, 40 iter: 36540.49537037037
+Mean Memory for Easy, 50 iter: 35725.58981481481
+```
 #### 2.1.9.2 For Medium Difficulty
+```
+Mean Memory for Medium, 10 iter, trial 1: 80503.90950744558 Unit: Bytes
+Mean Memory for Medium, 10 iter, trial 2: 22722.726231386026 Unit: Bytes
+Mean Memory for Medium, 10 iter, trial 3: 18928.449026345934 Unit: Bytes
+Mean Memory for Medium, 20 iter, trial 1: 44963.575028636886 Unit: Bytes
+Mean Memory for Medium, 20 iter, trial 2: 24814.479954180984 Unit: Bytes
+Mean Memory for Medium, 20 iter, trial 3: 22341.759450171823 Unit: Bytes
+Mean Memory for Medium, 30 iter, trial 1: 36318.00114547537 Unit: Bytes
+Mean Memory for Medium, 30 iter, trial 2: 22710.625429553264 Unit: Bytes
+Mean Memory for Medium, 30 iter, trial 3: 23828.142038946164 Unit: Bytes
+Mean Memory for Medium, 40 iter, trial 1: 32950.955326460484 Unit: Bytes
+Mean Memory for Medium, 40 iter, trial 2: 26248.47651775487 Unit: Bytes
+Mean Memory for Medium, 40 iter, trial 3: 23708.843069873998 Unit: Bytes
+Mean Memory for Medium, 50 iter, trial 1: 37495.52806414662 Unit: Bytes
+Mean Memory for Medium, 50 iter, trial 2: 28615.563573883162 Unit: Bytes
+Mean Memory for Medium, 50 iter, trial 3: 26584.359679266894 Unit: Bytes
+```
+##### Mean of All Trials
+```
+Mean Memory for Medium, 10 iter: 40718.361588392516
+Mean Memory for Medium, 20 iter: 30706.604810996567
+Mean Memory for Medium, 30 iter: 27618.922871324932
+Mean Memory for Medium, 40 iter: 27636.091638029786
+Mean Memory for Medium, 50 iter: 30898.483772432228
+```
 #### 2.1.9.3 For Hard Difficulty
+```
+Mean Memory for Hard, 10 iter, trial 1: 51694.60299625468 Unit: Bytes
+Mean Memory for Hard, 10 iter, trial 2: 5456.838951310861 Unit: Bytes
+Mean Memory for Hard, 10 iter, trial 3: 6240.602996254682 Unit: Bytes
+Mean Memory for Hard, 20 iter, trial 1: 34690.41947565543 Unit: Bytes
+Mean Memory for Hard, 20 iter, trial 2: 7461.483146067416 Unit: Bytes
+Mean Memory for Hard, 20 iter, trial 3: 8523.430711610486 Unit: Bytes
+Mean Memory for Hard, 30 iter, trial 1: 24540.696629213482 Unit: Bytes
+Mean Memory for Hard, 30 iter, trial 2: 8139.7191011235955 Unit: Bytes
+Mean Memory for Hard, 30 iter, trial 3: 8129.940074906367 Unit: Bytes
+Mean Memory for Hard, 40 iter, trial 1: 16608.037453183522 Unit: Bytes
+Mean Memory for Hard, 40 iter, trial 2: 8202.059925093634 Unit: Bytes
+Mean Memory for Hard, 40 iter, trial 3: 8201.602996254682 Unit: Bytes
+Mean Memory for Hard, 50 iter, trial 1: 12225.707865168539 Unit: Bytes
+Mean Memory for Hard, 50 iter, trial 2: 8755.153558052434 Unit: Bytes
+Mean Memory for Hard, 50 iter, trial 3: 9861.2734082397 Unit: Bytes
+```
+##### Mean of All Trials
+```
+Mean Memory for Hard, 10 iter: 21130.681647940077
+Mean Memory for Hard, 20 iter: 16891.777777777777
+Mean Memory for Hard, 30 iter: 13603.451935081148
+Mean Memory for Hard, 40 iter: 11003.900124843945
+Mean Memory for Hard, 50 iter: 10280.711610486891
+```
+##### Graphical Representation of the Obtained Outputs
+![image](https://github.com/user-attachments/assets/ac2fb320-b5e6-4285-b7bf-989a620655b0)
+
 ### 2.1.10 Overall Result for Algorithm Analysis
+#### 2.1.10.1 For Easy
+![image](https://github.com/user-attachments/assets/06b4c057-4ecc-4111-ba9c-716f1c81f0c7)</br>
+As we can see the plots of Memory Consumption and the Execution Time required against the number of iterations "n" for which we are running the forward checking algorithm, we can see that in general the Execution Time and the Memory Consumed reduce with n. However, After 40, there is certain tradeoff that is seen, that is, the runtime shows slight increase. The point of crossing, that is near n = 45 can be considered to be optimal with respect to both Runtime and Memory Consumed.
+
+#### 2.1.10.2 For Medium
+![image](https://github.com/user-attachments/assets/477c523c-b967-4388-a65f-0818ea99668b)</br>
+In this plot of Memory Consumption and Runtime against the value of "n", we can see that as the value of n increases from 10 to 30, both the parameters under consideration show a decrease. However, when we increase the value of n beyond 30, both the parameters under consideration show a tremendous increase, which leads us to the conclusion that the global minimum for both the memory consumed and the execution time taken is at n = 30. 
+
+#### 2.1.10.3 For Hard
+![image](https://github.com/user-attachments/assets/875cbc3e-0668-4b4b-a7c3-9660e44464a9)</br>
+From the above plot of Memory Consumption and the Execution Time required against the number of iterations "n" for which we are running the forward checking algorithm, we can again see that in general the Execution Time and the Memory Consumed reduce with n. However, After 40, there is certain tradeoff that is seen, that is, the runtime shows slight increase. The point of crossing, that is again near n = 45 can be considered to be optimal with respect to both Runtime and Memory Consumed.
+
+#### Summary of Observed Results
+From the above analysis, we can see that the value of n (the number of iterations we are running the Forward Checking Algoruthm followed by filling the remaining spaces by Backtracking) can be tabulated as given below:
+| Difficulty  | Value of n  |
+| ----------- | ----------- |
+| Easy        | ~45         |
+| Medium      | ~30         |
+| Hard        | ~45         |
+
 ### 2.1.11 Sudoku Vision: Streamlit Application
 
 
