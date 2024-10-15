@@ -138,10 +138,63 @@ Mean Runtime for Easy, 40 iter: 7.790321111111111
 Mean Runtime for Easy, 50 iter: 8.54176787037037
 ```
 
-
-
 #### 2.1.8.2 For Medium Difficulty
+```
+Mean Runtime for Medium, 10 iter, trial 1: 15.273029553264607
+Mean Runtime for Medium, 10 iter, trial 2: 2.9854753722794958
+Mean Runtime for Medium, 10 iter, trial 3: 2.506118213058419
+Mean Runtime for Medium, 20 iter, trial 1: 4.1784522336769765
+Mean Runtime for Medium, 20 iter, trial 2: 2.5116075601374566
+Mean Runtime for Medium, 20 iter, trial 3: 2.3928760595647196
+Mean Runtime for Medium, 30 iter, trial 1: 2.9906161512027487
+Mean Runtime for Medium, 30 iter, trial 2: 2.2939569301260025
+Mean Runtime for Medium, 30 iter, trial 3: 2.3736013745704474
+Mean Runtime for Medium, 40 iter, trial 1: 3.125465177548683
+Mean Runtime for Medium, 40 iter, trial 2: 2.502982588774341
+Mean Runtime for Medium, 40 iter, trial 3: 2.650259793814433
+Mean Runtime for Medium, 50 iter, trial 1: 3.2603886597938145
+Mean Runtime for Medium, 50 iter, trial 2: 2.7966096219931273
+Mean Runtime for Medium, 50 iter, trial 3: 2.7148237113402063
+```
+##### Mean of All Trials
+```
+Mean Runtime for Medium, 10 iter: 6.92154104620084
+Mean Runtime for Medium, 20 iter: 3.0276452844597173
+Mean Runtime for Medium, 30 iter: 2.552724818633066
+Mean Runtime for Medium, 40 iter: 2.759569186712486
+Mean Runtime for Medium, 50 iter: 2.9239406643757158
+```
+
 #### 2.1.8.3 For Hard Difficulty
+```
+Mean Runtime for Hard, 10 iter, trial 1: 3.387571535580525
+Mean Runtime for Hard, 10 iter, trial 2: 0.2921269662921348
+Mean Runtime for Hard, 10 iter, trial 3: 0.17943258426966294
+Mean Runtime for Hard, 20 iter, trial 1: 1.523129213483146
+Mean Runtime for Hard, 20 iter, trial 2: 0.27799999999999997
+Mean Runtime for Hard, 20 iter, trial 3: 0.22899925093632956
+Mean Runtime for Hard, 30 iter, trial 1: 1.0907955056179774
+Mean Runtime for Hard, 30 iter, trial 2: 0.31465955056179773
+Mean Runtime for Hard, 30 iter, trial 3: 0.28845243445692886
+Mean Runtime for Hard, 40 iter, trial 1: 0.8789086142322098
+Mean Runtime for Hard, 40 iter, trial 2: 0.24568876404494383
+Mean Runtime for Hard, 40 iter, trial 3: 0.22452172284644198
+Mean Runtime for Hard, 50 iter, trial 1: 0.9191022471910113
+Mean Runtime for Hard, 50 iter, trial 2: 0.2584801498127341
+Mean Runtime for Hard, 50 iter, trial 3: 0.28364044943820227
+```
+##### Mean of ALl Trials
+```
+Mean Runtime for Hard, 10 iter: 1.2863770287141076
+Mean Runtime for Hard, 20 iter: 0.6767094881398252
+Mean Runtime for Hard, 30 iter: 0.5646358302122346
+Mean Runtime for Hard, 40 iter: 0.44970636704119854
+Mean Runtime for Hard, 50 iter: 0.4870742821473159
+```
+##### Graphical Representation of the Obtained Outputs
+![image](https://github.com/user-attachments/assets/d9a4fd52-aed9-42c0-b754-fd2b84604e2f)
+
+
 ### 2.1.9 Algorithm Dynamic Memory Consumption Analysis
 #### 2.1.9.1 For Easy Difficulty
 #### 2.1.9.2 For Medium Difficulty
