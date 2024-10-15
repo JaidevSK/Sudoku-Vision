@@ -307,9 +307,13 @@ A basic Command Line Interface application is also developed which requires the 
 <INSERT IMAGE>
 
 #### Web Appllication
-The Web Application using Streamlit can be accessed using the link given above. The application can also be used locally on a desktop system by cloning this repository. The advantage of a web application deployed is that it can be used from any device with internet connection including Mobile Phones. The usage of the Web APplication is as shown in the images below:
+The Web Application using Streamlit can be accessed using the link given above. The application can also be used locally on a desktop system by cloning this repository. The advantage of a web application deployed is that it can be used from any device with internet connection including Mobile Phones. The usage of the Web Application is as shown in the images below:
 <INSERT IMAGES>
 
+
+# Referneces and Acknowledgements
+- Foundations of AI: Multiagent Systems (2024) - IIT Gandhinagar
+- Documentations of Utilised Libraries
 
 
 
