@@ -93,11 +93,11 @@ The AC3 algorithm was also developed which was also solving the CSP problem of S
 
 ### 2.1.6 Forward Checking
 </br> ![image](https://github.com/user-attachments/assets/cba8b194-994c-46bf-b2cf-a95091076f07)</br>
-In order to ensure faster execution of constraint satisfaction algoritm, Forward Checking Algorithm was used for "iteration" number of iterations as given in the code above. In this, we check the constraint arcs from the assigned variables to restric the domains of the unassigned variables. The constraint with the minimum possibilities was extracted and assigned that value. This was done for "iteration" number of iterations. The results are as shown below:
-Original Sudoku Array:
+In order to ensure faster execution of constraint satisfaction algoritm, Forward Checking Algorithm was used for "iteration" number of iterations as given in the code above. In this, we check the constraint arcs from the assigned variables to restric the domains of the unassigned variables. The constraint with the minimum possibilities was extracted and assigned that value. This was done for "iteration" number of iterations. The results are as shown below:</br>
+Original Sudoku Array:</br>
 </br>![image](https://github.com/user-attachments/assets/e7235f2d-dc97-40fa-a2e9-a5e6ed63afe1)</br>
-```solved_grid = forward_checking(sudoku_grid, constraints, 25)```
-Results after running Forward Checking for 25 Iterations:
+```solved_grid = forward_checking(sudoku_grid, constraints, 25)```</br>
+Results after running Forward Checking for 25 Iterations:</br>
 </br>![image](https://github.com/user-attachments/assets/af661014-1180-4a7d-b862-efcad26bb3e9)</br>
 
 
