@@ -309,7 +309,18 @@ A basic Command Line Interface application is also developed which requires the 
 #### Web Appllication
 The Web Application using Streamlit can be accessed using the link given above. The application can also be used locally on a desktop system by cloning this repository. The advantage of a web application deployed is that it can be used from any device with internet connection including Mobile Phones. The usage of the Web Application is as shown in the images below:
 ##### Backtracking Application
-<iframe width="560" height="315" src="https://www.youtube.com/embed/tFo7sZJ7HvA?si=0SrU0BKTnok1Le31" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+https://github.com/user-attachments/assets/907f31e9-87f2-4d27-a05e-6f5f16b728e7
+
+##### Forward Checing Application
+
+Uploading ForwardChecking.mp4…
+
+##### Optimal Solving Application
+
+https://github.com/user-attachments/assets/288e96be-08fe-4c02-9533-becd8bbcdbfd
+
 
 
 
