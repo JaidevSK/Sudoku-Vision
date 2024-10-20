@@ -315,7 +315,11 @@ https://github.com/user-attachments/assets/907f31e9-87f2-4d27-a05e-6f5f16b728e7
 
 ##### Forward Checing Application
 
-Uploading ForwardChecking.mp4…
+
+
+https://github.com/user-attachments/assets/a28b70c6-8962-49c8-8d4d-867433a08428
+
+
 
 ##### Optimal Solving Application
 
@@ -327,6 +331,7 @@ https://github.com/user-attachments/assets/288e96be-08fe-4c02-9533-becd8bbcdbfd
 # References and Acknowledgements
 - Foundations of AI: Multiagent Systems (2024) - IIT Gandhinagar
 - Documentations of Utilised Libraries
+- Stack Overflow (for debugging)
 
 
 
