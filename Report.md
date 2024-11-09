@@ -313,6 +313,9 @@ The Web Application using Streamlit can be accessed using the link given above. 
 
 https://github.com/user-attachments/assets/907f31e9-87f2-4d27-a05e-6f5f16b728e7
 
+![sudoku](https://github.com/user-attachments/assets/485ff202-a46c-43d1-9a0e-f3c93c894278)
+
+
 ##### Forward Checing Application
 
 
