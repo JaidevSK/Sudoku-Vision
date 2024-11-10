@@ -213,6 +213,8 @@ We can see that optimized backtracking drastically outperforms backtracking.
 </br>![image](Images/med_and_hard_time.png)</br>
 
 #### Memory Comparison
+
+We can see that for medium and hard sudokus, optimized backtracking takes less memory, while it is similar in the case of easy sudokus as there are lesser number of empty cells in easy sudoku.
 </br>![image](Images/memory.png)</br>
 
 
