@@ -110,8 +110,8 @@ Given above is the result after solving the remaining Sudoku using Backtracking.
 
 ### 2.1.8 Optimized Backtracking
 We have optimized the backtracking algorithm using the minimum-remaining-value (MRV) heuristic. In the backtracking algorithm, when selecting a variable to guess (assign) its value, we choose the variable with the least remaining values or the variable which has the most number of constraints. The intuition behind this is that the search space for this variable will be drastically less than a variable which is more flexible or is involved in lesser constraints. Following is the optimized backtracking algorithm with the MRV heuristic.
-</br>![image](Images/mrv)</br>
-</br>![image](Images/solve_obt)</br>
+</br>![image](Images/mrv.png)</br>
+</br>![image](Images/solve_obt.png)</br>
 
 ### 2.1.9 Algorithm Runtime Analysis
 Following the standard execution time / performance measurement process, the program was run for five different values of "n" (the number of iterations for which the forward checking was run) three times and the mean of this times was taken. All the time values are calculated in nanoseconds. The time consumption was calculated using the time library (time_ns command) of python. The values are as given below:
@@ -200,6 +200,20 @@ Mean Runtime for Hard, 50 iter: 0.4870742821473159
 ```
 ##### Graphical Representation of the Obtained Outputs
 ![image](https://github.com/user-attachments/assets/d9a4fd52-aed9-42c0-b754-fd2b84604e2f)
+
+##### Performance comparison of Simple Backtracking and Optimized Backtracking
+
+As expected we find that the optimized backtracking algorithm drastically outperforms the simple backtracking algorithm. Following are the results.
+
+#### Time Comparison
+
+We can see that optimized backtracking drastically outperforms backtracking.
+</br>![image](Images/easy_bt.png)</br>
+</br>![image](Images/easy_obt.png)</br>
+</br>![image](Images/med_and_hard_time.png)</br>
+
+#### Memory Comparison
+</br>![image](Images/memory.png)</br>
 
 
 ### 2.1.10 Algorithm Dynamic Memory Consumption Analysis
