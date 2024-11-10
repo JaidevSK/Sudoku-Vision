@@ -27,5 +27,5 @@ corresponding results).
 Algorithms: Backtracking, Constraint Satisfaction
 Python: OpenCV, Scikit Image, TensorFlow, Matplotlib
 Application Development: HTML+CSS+JS+Flask / Streamlit / PyGame / Kivy Python
-## Future Prospects
-Exploring the possibility of using Reinforcement Learning to solve Sudokus.
+## Future Prospects (ACHIEVED)
+Develop suitable visualisations for helping the user get a better understanding of the algorithms.
