@@ -352,6 +352,12 @@ https://github.com/user-attachments/assets/a28b70c6-8962-49c8-8d4d-867433a08428
 https://github.com/user-attachments/assets/288e96be-08fe-4c02-9533-becd8bbcdbfd
 
 
+##### AC3 Application
+
+
+##### Optimized Backtracking Application and Animation
+
+
 
 
 # References and Acknowledgements
