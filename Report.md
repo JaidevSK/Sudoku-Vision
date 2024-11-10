@@ -354,9 +354,10 @@ https://github.com/user-attachments/assets/288e96be-08fe-4c02-9533-becd8bbcdbfd
 
 ##### AC3 Application
 
+https://youtu.be/v-z_XBH--CE
 
 ##### Optimized Backtracking Application and Animation
-
+https://youtu.be/R_X2WlvyoNA
 ![sudoku](Images/sudoku_animation.gif)
 
 
