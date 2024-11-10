@@ -89,7 +89,9 @@ The results from the constraint finder algorithm are as given below:
 
 ### 2.1.5 AC3
 The AC3 algorithm was also developed which was also solving the CSP problem of Sudoku. But due to extremely slow procedure and time consuming nature of AC3, forwrd checking was used in actual implementation instead.
-</br>![image](https://github.com/user-attachments/assets/a46f9b50-6603-4b9e-b30d-615d2570e663)</br>
+</br>![image](Images/AC3.png)</br>
+Following is the code for the function which checks arc consistency.
+</br>![image](Images/arc_check.png)</br>
 
 ### 2.1.6 Forward Checking
 </br> ![image](https://github.com/user-attachments/assets/cba8b194-994c-46bf-b2cf-a95091076f07)</br>
@@ -106,9 +108,14 @@ The traditional backtracking algorithm for solving the remaining sudoku grid aft
 </br>![image](https://github.com/user-attachments/assets/545fd45d-3742-467b-b773-96675bb8f82c)</br>
 Given above is the result after solving the remaining Sudoku using Backtracking.
 
-### 2.1.8 Algorithm Runtime Analysis
+### 2.1.8 Optimized Backtracking
+We have optimized the backtracking algorithm using the minimum-remaining-value (MRV) heuristic. In the backtracking algorithm, when selecting a variable to guess (assign) its value, we choose the variable with the least remaining values or the variable which has the most number of constraints. The intuition behind this is that the search space for this variable will be drastically less than a variable which is more flexible or is involved in lesser constraints. Following is the optimized backtracking algorithm with the MRV heuristic.
+</br>![image](Images/mrv.png)</br>
+</br>![image](Images/solve_obt.png)</br>
+
+### 2.1.9 Algorithm Runtime Analysis
 Following the standard execution time / performance measurement process, the program was run for five different values of "n" (the number of iterations for which the forward checking was run) three times and the mean of this times was taken. All the time values are calculated in nanoseconds. The time consumption was calculated using the time library (time_ns command) of python. The values are as given below:
-#### 2.1.8.1 For Easy Difficulty
+#### 2.1.9.1 For Easy Difficulty
 
 ```
 Mean Runtime for Easy, 10 iter, trial 1: 38.57733638888889
@@ -138,7 +145,7 @@ Mean Runtime for Easy, 40 iter: 7.790321111111111
 Mean Runtime for Easy, 50 iter: 8.54176787037037
 ```
 
-#### 2.1.8.2 For Medium Difficulty
+#### 2.1.9.2 For Medium Difficulty
 ```
 Mean Runtime for Medium, 10 iter, trial 1: 15.273029553264607
 Mean Runtime for Medium, 10 iter, trial 2: 2.9854753722794958
@@ -165,7 +172,7 @@ Mean Runtime for Medium, 40 iter: 2.759569186712486
 Mean Runtime for Medium, 50 iter: 2.9239406643757158
 ```
 
-#### 2.1.8.3 For Hard Difficulty
+#### 2.1.9.3 For Hard Difficulty
 ```
 Mean Runtime for Hard, 10 iter, trial 1: 3.387571535580525
 Mean Runtime for Hard, 10 iter, trial 2: 0.2921269662921348
@@ -194,10 +201,26 @@ Mean Runtime for Hard, 50 iter: 0.4870742821473159
 ##### Graphical Representation of the Obtained Outputs
 ![image](https://github.com/user-attachments/assets/d9a4fd52-aed9-42c0-b754-fd2b84604e2f)
 
+##### Performance comparison of Simple Backtracking and Optimized Backtracking
 
-### 2.1.9 Algorithm Dynamic Memory Consumption Analysis
+As expected we find that the optimized backtracking algorithm drastically outperforms the simple backtracking algorithm. Following are the results.
+
+#### Time Comparison
+
+We can see that optimized backtracking drastically outperforms backtracking.
+</br>![image](Images/easy_bt.png)</br>
+</br>![image](Images/easy_obt.png)</br>
+</br>![image](Images/med_and_hard_time.png)</br>
+
+#### Memory Comparison
+
+We can see that for medium and hard sudokus, optimized backtracking takes less memory, while it is similar in the case of easy sudokus as there are lesser number of empty cells in easy sudoku.
+</br>![image](Images/memory.png)</br>
+
+
+### 2.1.10 Algorithm Dynamic Memory Consumption Analysis
 The dynamic memory consumption analysis is necessary for effectively running the sudoku solver on devices with lower computing power such as mobile phones. In the same standard measurement process as that of execution time analysis, the program was run thrice and the amout of memory consumed was tracked by the command ```tracemalloc.get_traced_memory()``` from the tracemalloc library in python. The results are as shown below. The unit for the memory consumed is Bytes.
-#### 2.1.9.1 For Easy Difficulty
+#### 2.1.10.1 For Easy Difficulty
 ```
 Mean Memory for Easy, 10 iter, trial 1: 100576.71111111112 Unit: Bytes
 Mean Memory for Easy, 10 iter, trial 2: 30832.069444444445 Unit: Bytes
@@ -223,7 +246,7 @@ Mean Memory for Easy, 30 iter: 37715.65740740741
 Mean Memory for Easy, 40 iter: 36540.49537037037
 Mean Memory for Easy, 50 iter: 35725.58981481481
 ```
-#### 2.1.9.2 For Medium Difficulty
+#### 2.1.10.2 For Medium Difficulty
 ```
 Mean Memory for Medium, 10 iter, trial 1: 80503.90950744558 Unit: Bytes
 Mean Memory for Medium, 10 iter, trial 2: 22722.726231386026 Unit: Bytes
@@ -249,7 +272,7 @@ Mean Memory for Medium, 30 iter: 27618.922871324932
 Mean Memory for Medium, 40 iter: 27636.091638029786
 Mean Memory for Medium, 50 iter: 30898.483772432228
 ```
-#### 2.1.9.3 For Hard Difficulty
+#### 2.1.10.3 For Hard Difficulty
 ```
 Mean Memory for Hard, 10 iter, trial 1: 51694.60299625468 Unit: Bytes
 Mean Memory for Hard, 10 iter, trial 2: 5456.838951310861 Unit: Bytes
@@ -278,16 +301,16 @@ Mean Memory for Hard, 50 iter: 10280.711610486891
 ##### Graphical Representation of the Obtained Outputs
 ![image](https://github.com/user-attachments/assets/ac2fb320-b5e6-4285-b7bf-989a620655b0)
 
-### 2.1.10 Overall Result for Algorithm Analysis
-#### 2.1.10.1 For Easy
+### 2.1.11 Overall Result for Algorithm Analysis
+#### 2.1.11.1 For Easy
 ![image](https://github.com/user-attachments/assets/06b4c057-4ecc-4111-ba9c-716f1c81f0c7)</br>
 As we can see the plots of Memory Consumption and the Execution Time required against the number of iterations "n" for which we are running the forward checking algorithm, we can see that in general the Execution Time and the Memory Consumed reduce with n. However, After 40, there is certain tradeoff that is seen, that is, the runtime shows slight increase. The point of crossing, that is near n = 45 can be considered to be optimal with respect to both Runtime and Memory Consumed.
 
-#### 2.1.10.2 For Medium
+#### 2.1.11.2 For Medium
 ![image](https://github.com/user-attachments/assets/477c523c-b967-4388-a65f-0818ea99668b)</br>
 In this plot of Memory Consumption and Runtime against the value of "n", we can see that as the value of n increases from 10 to 30, both the parameters under consideration show a decrease. However, when we increase the value of n beyond 30, both the parameters under consideration show a tremendous increase, which leads us to the conclusion that the global minimum for both the memory consumed and the execution time taken is at n = 30. 
 
-#### 2.1.10.3 For Hard
+#### 2.1.11.3 For Hard
 ![image](https://github.com/user-attachments/assets/875cbc3e-0668-4b4b-a7c3-9660e44464a9)</br>
 From the above plot of Memory Consumption and the Execution Time required against the number of iterations "n" for which we are running the forward checking algorithm, we can again see that in general the Execution Time and the Memory Consumed reduce with n. However, After 40, there is certain tradeoff that is seen, that is, the runtime shows slight increase. The point of crossing, that is again near n = 45 can be considered to be optimal with respect to both Runtime and Memory Consumed.
 
@@ -299,7 +322,7 @@ From the above analysis, we can see that the value of n (the number of iteration
 | Medium      | ~30         |
 | Hard        | ~45         |
 
-### 2.1.11 Sudoku Vision: Streamlit Application
+### 2.1.12 Sudoku Vision: Streamlit Application
 In oreder to provide a suitable user interface for the user to utilise our methodology adopted for *Solving Sudokus from Images*, we have developed a web application using the streamlit framework. Streamlit is a flexible framework in python that allows us to develop applications in Python along with styling using HTML, CSS and JS. It also allows us to deploy the application on streamlit cloud. The link to the application is: <ADD LINK>
 
 #### CLI Application
@@ -327,6 +350,15 @@ https://github.com/user-attachments/assets/a28b70c6-8962-49c8-8d4d-867433a08428
 ##### Optimal Solving Application
 
 https://github.com/user-attachments/assets/288e96be-08fe-4c02-9533-becd8bbcdbfd
+
+
+##### AC3 Application
+
+https://youtu.be/v-z_XBH--CE
+
+##### Optimized Backtracking Application and Animation
+https://youtu.be/R_X2WlvyoNA
+![sudoku](Images/sudoku_animation.gif)
 
 
 
