@@ -357,6 +357,8 @@ https://github.com/user-attachments/assets/288e96be-08fe-4c02-9533-becd8bbcdbfd
 
 ##### Optimized Backtracking Application and Animation
 
+</br>![image](Images/sudoku_animation.gif)</br>
+
 
 
 
