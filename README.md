@@ -10,3 +10,6 @@
 </br>
 
 **Presentation**: https://www.youtube.com/watch?v=aaXAEGw2XH0
+
+# Applications
+- For the Image based Applications, use the image for trials: https://github.com/JaidevSK/Sudoku-Vision/blob/main/Sudoku%20Extraction/sudoku1.jpg
